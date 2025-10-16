@@ -39,14 +39,23 @@ This project innovatively integrates polarization imaging (AoLP/DoLP) with RGB i
 This project is based on the RGBP-Glass dataset, the first large-scale RGB-Polarization dataset for transparent material defect detection. | 本项目基于RGBP-Glass数据集，这是首个大规模面向透明材料缺陷检测的RGB-偏振数据集。
 
 dataset/
+
 ├── train/
+
 │   ├── image/        # RGB images (*_rgb.tiff)
+
 │   ├── aolp/         # AoLP images (*_aolp.tiff)  
+
 │   ├── dolp/         # DoLP images (*_dolp.tiff)
+
 │   ├── mask/         # Mask labels (*_mask.png)
+
 │   └── edge/         # Edge labels (*_edge.png)
+
 └── test/
+
     └── ...           # Same structure
+    
     
 ## 🚀 Quick Start | 快速开始
 ### Requirements | 环境要求
