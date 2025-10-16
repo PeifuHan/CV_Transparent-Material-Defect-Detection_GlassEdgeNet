@@ -40,21 +40,13 @@ This project is based on the RGBP-Glass dataset, the first large-scale RGB-Polar
 
 dataset/
 ├── train/
-
 │   ├── image/        # RGB images (*_rgb.tiff)
-
 │   ├── aolp/         # AoLP images (*_aolp.tiff)  
-
 │   ├── dolp/         # DoLP images (*_dolp.tiff)
-
 │   ├── mask/         # Mask labels (*_mask.png)
-
 │   └── edge/         # Edge labels (*_edge.png)
-
 └── test/
-
     └── ...           # Same structure
-    
     
 ## 🚀 Quick Start | 快速开始
 ### Requirements | 环境要求
@@ -79,10 +71,15 @@ If you use this code or the RGBP-Glass dataset in your research, please cite the
 
 @inproceedings{mei2022glass,
   title={Glass segmentation using intensity and spectral polarization cues},
+  
   author={Mei, Haiyang and Dong, Bo and Dong, Wen and Yang, Jiaxi and Baek, Seung-Hwan and Heide, Felix and Peers, Pieter and Wei, Xiaopeng and Yang, Xin},
+  
   booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  
   pages={12622--12631},
+  
   year={2022}
+  
 }
 
 ## 🤝 Contributing | 贡献
