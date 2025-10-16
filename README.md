@@ -12,29 +12,14 @@ This project innovatively integrates polarization imaging (AoLP/DoLP) with RGB i
 
 ### ✨ Core Features | 核心特性
 - **Multimodal Feature Fusion**: Leverages high-frequency edge features from polarization information and low-frequency texture information from RGB data. | **多模态特征融合**：利用偏振信息的高频边缘特征与RGB数据的低频纹理信息。
-- 
+  
 - **Curvature Adaptive Filtering**: Dynamic morphological operations driven by local curvature estimation based on the Hessian matrix. | **曲率自适应滤波**：基于Hessian矩阵的局部曲率估计，驱动动态形态学操作。
-- 
+  
 - **Attention Mechanism**: Channel attention weighting fusion enhances feature representation. | **注意力机制**：通道注意力加权融合，增强特征表达能力。
-- 
+  
 - **End-to-End Training**: Complete PyTorch implementation supporting training and inference. | **端到端训练**：完整的PyTorch实现，支持训练与推理。
 
 ## 🏗 Model Architecture | 模型架构
-### Network Structure | 网络结构
-Input (RGB + AoLP + DoLP)
-|
-├── RGB Feature Extractor ───────────┐
-├── Polarization Feature Extractor ──┤
-│ │
-├── Wavelet Decomposition Fusion ───┤
-│ │
-├── Channel Attention Fusion ───────┼── Feature Fusion Module
-│ │
-├── Hessian Curvature Estimation ───┤
-│ │
-└── Dynamic Morphological Filtering ─┘
-│
-└── MLP Decoder → Edge Prediction Map
 ### Key Techniques | 关键技术
 1. **Multimodal Feature Extraction**
    - RGB branch: Extracts structural texture features.
@@ -52,15 +37,24 @@ Input (RGB + AoLP + DoLP)
 
 ## 📊 Dataset | 数据集
 This project is based on the RGBP-Glass dataset, the first large-scale RGB-Polarization dataset for transparent material defect detection. | 本项目基于RGBP-Glass数据集，这是首个大规模面向透明材料缺陷检测的RGB-偏振数据集。
+
 dataset/
 ├── train/
+
 │   ├── image/        # RGB images (*_rgb.tiff)
+
 │   ├── aolp/         # AoLP images (*_aolp.tiff)  
+
 │   ├── dolp/         # DoLP images (*_dolp.tiff)
+
 │   ├── mask/         # Mask labels (*_mask.png)
+
 │   └── edge/         # Edge labels (*_edge.png)
+
 └── test/
+
     └── ...           # Same structure
+    
     
 ## 🚀 Quick Start | 快速开始
 ### Requirements | 环境要求
@@ -82,6 +76,7 @@ IMAGE_SIZE = (256, 256)             # Input size | 输入尺寸
 
 ## 📝 Citation | 引用
 If you use this code or the RGBP-Glass dataset in your research, please cite the relevant literature: | 如果您在研究中使用了本代码或RGBP-Glass数据集，请引用相关文献：
+
 @inproceedings{mei2022glass,
   title={Glass segmentation using intensity and spectral polarization cues},
   author={Mei, Haiyang and Dong, Bo and Dong, Wen and Yang, Jiaxi and Baek, Seung-Hwan and Heide, Felix and Peers, Pieter and Wei, Xiaopeng and Yang, Xin},
