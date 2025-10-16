@@ -1,0 +1,2 @@
+# CV_Transparent-Material-Defect-Detection_GlassEdgeNet
+GlassEdgeNet是一个先进的多模态融合网络，专门用于解决透明材料（如玻璃、树脂等）在缺陷检测中的边缘模糊和低对比度难题。本项目创新性地融合偏振成像（AoLP/DoLP）与RGB信息，并结合曲率自适应的动态形态学滤波，显著提升了透明材料边缘检测的精度与鲁棒性。
