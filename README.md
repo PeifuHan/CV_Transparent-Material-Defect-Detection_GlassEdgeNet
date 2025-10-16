@@ -3,7 +3,6 @@
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.0+-red.svg)](https://pytorch.org)
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## 📖 Overview | 概述
 
@@ -52,10 +51,6 @@ Input (RGB + AoLP + DoLP)
    - 离散小波分解思想。
    - 偏振高频 + RGB低频互补。
 
-3. **Curvature-Adaptive Morphological Filtering**
-   ```math
-   B = |√(|det(H)/(tr(H)+ε)| + ε)|
-   Ifiltered = (Ifused ∘ K(B)) ∙ K(B)
 ## 📊 Dataset | 数据集
 This project is based on the RGBP-Glass dataset, the first large-scale RGB-Polarization dataset for transparent material defect detection. | 本项目基于RGBP-Glass数据集，这是首个大规模面向透明材料缺陷检测的RGB-偏振数据集。
 dataset/
